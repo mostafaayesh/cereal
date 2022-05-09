@@ -949,8 +949,8 @@ struct LateralPlan @0xe1e9318e2ae8b51e {
   dProb @21 :Float32;
 
   #dp-mapd
-  dPathWLinesX @33 :List(Float32);
-  dPathWLinesY @34 :List(Float32);
+  dPathWLinesX @34 :List(Float32);
+  dPathWLinesY @35 :List(Float32);
 
   mpcSolutionValid @9 :Bool;
   desire @17 :Desire;
@@ -966,9 +966,9 @@ struct LateralPlan @0xe1e9318e2ae8b51e {
   solverExecutionTime @30 :Float32;
 
   # dp
-  dpALCAStartIn @31 :Float32;
-  dpLaneLessModeIsE2E @32 :Bool;
-  # 33~34 are being used in mapd
+  dpALCAStartIn @32 :Float32;
+  dpLaneLessModeIsE2E @33 :Bool;
+  # 34~35 are being used in mapd
 
   enum Desire {
     none @0;
@@ -1957,7 +1957,7 @@ struct Event {
     pandaStateDEPRECATED @12 :PandaState;
 
     #dp
-    dragonConf @90 :Dp.DragonConf;
-    liveMapData @91 :Dp.LiveMapData;
+    dragonConf @92 :Dp.DragonConf;
+    liveMapData @93 :Dp.LiveMapData;
   }
 }

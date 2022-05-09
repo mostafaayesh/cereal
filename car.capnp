@@ -136,11 +136,11 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     startupFuzzyFingerprintDEPRECATED @97;
 
     #dp
-    autoLaneChange @108;
-    manualSteeringRequired @109;
-    manualSteeringRequiredBlinkersOn @110;
-    speedLimitActive @111;
-    speedLimitValueChange @112;
+    autoLaneChange @113;
+    manualSteeringRequired @114;
+    manualSteeringRequiredBlinkersOn @115;
+    speedLimitActive @116;
+    speedLimitValueChange @117;
   }
 }
 
