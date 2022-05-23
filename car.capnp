@@ -197,6 +197,9 @@ struct CarState {
 
   # distance lines 
   distanceLines @39 :Int16;
+  
+  # lkas enabled
+  lkasEnabled @39 :Bool;
 
   struct WheelSpeeds {
     # optional wheel speeds
