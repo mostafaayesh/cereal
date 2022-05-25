@@ -134,6 +134,13 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     modelLagWarningDEPRECATED @93;
     startupOneplusDEPRECATED @82;
     startupFuzzyFingerprintDEPRECATED @97;
+
+    #dp
+    autoLaneChange @113;
+    manualSteeringRequired @114;
+    manualSteeringRequiredBlinkersOn @115;
+    speedLimitActive @116;
+    speedLimitValueChange @117;
   }
 }
 
@@ -212,6 +219,12 @@ struct CarState {
   fuelGauge @41 :Float32; # battery or fuel tank level from 0.0 to 1.0
   charging @43 :Bool;
 
+  # dp
+  lkMode @44 :Bool;
+  engineRPM @45 :Float32;
+  cruiseActualEnabled @46 :Bool;
+  distanceLines @47 :UInt8;
+
   struct WheelSpeeds {
     # optional wheel speeds
     fl @0 :Float32;
@@ -227,6 +240,8 @@ struct CarState {
     speedOffset @3 :Float32;
     standstill @4 :Bool;
     nonAdaptive @5 :Bool;
+    #dp-mapd
+    speedLimit @6 :Float32;
   }
 
   enum GearShifter {
@@ -264,7 +279,7 @@ struct CarState {
   }
 
   errorsDEPRECATED @0 :List(CarEvent.EventName);
-  brakeLightsDEPRECATED @19 :Bool;
+  brakeLights @19 :Bool;
 }
 
 # ******* radar state @ 20hz *******
