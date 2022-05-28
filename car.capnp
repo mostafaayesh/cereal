@@ -198,6 +198,9 @@ struct CarState {
   # distance lines 
   distanceLines @39 :Int16;
 
+  # lateral enabled
+  lateralEnabled @40 :Bool;
+
   struct WheelSpeeds {
     # optional wheel speeds
     fl @0 :Float32;
