@@ -212,6 +212,7 @@ struct CarState {
   belowLaneChangeSpeed @48 :Bool;
   accEnabled @49 :Bool;
   hudLead @50 :Float32;
+  distanceLines @51 :Int16; 
 
   # which packets this state came from
   canMonoTimes @12: List(UInt64);
